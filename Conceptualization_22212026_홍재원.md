@@ -35,7 +35,7 @@
 **1) Project background**
 
 
-![Reasoning Guard Logo](./assets/그림1.png)
+![그림1](./assets/그림1.png)
 [그림 1] 연합뉴스, 2026.03.03 기준 - 군집 위협 규모에 따른 방어 측 재정적 손해 누적 추이 
 
 
@@ -68,8 +68,8 @@
 ## 2. System Context Diagram Labels
 
 
-![Reasoning Guard Logo](./assets/그림1.png)
-[그림 1] 연합뉴스, 2026.03.03 기준 - 군집 위협 규모에 따른 방어 측 재정적 손해 누적 추이
+![그림2](./assets/그림2.png)
+[그림 2] System context diagram
 
 
 * Fighter Jet / Drone / Rocket (Proxy) Dataset : 전투기 / 드론 / 로켓(대리) 데이터셋

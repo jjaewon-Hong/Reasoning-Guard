@@ -2,7 +2,7 @@
 딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
 
 
-![Reasoning Guard Logo](./Logo.png)
+![Reasoning Guard Logo](./assets/Logo.png)
 
 
 22212026 홍재원 hongjaewon0428@gmail.com
@@ -12,24 +12,80 @@
 | :--- | :--- | :--- | :--- |
 | 03/13/2026 | 0.00 | First Concept document | 홍재원 |
 
+## Contents
+1. Business purpose 
+
+2. System context diagram 
+
+3. Use case list 
+
+4. Concept of operation  
+
+5. Problem statement 
+
+6. Glossary 
+
+7. References 
+
 ---
 
 ## 1. Business Purpose
-(oss설계.hwp에 작성하신 Project Background 내용을 그대로 옮겨 넣으시면 됩니다.)
+**1) Project background**
+
+
+![Reasoning Guard Logo](./assets/그림1.png)
+[그림 1] 연합뉴스, 2026.03.03 기준 - 군집 위협 규모에 따른 방어 측 재정적 손해 누적 추이 
+
+
+ 위 [그림 1]에서 볼 수 있듯, 단 100기의 드론이 쇄도하는 군집 공습 상황만 가정해도 방어 측은 순식간에 약 6000억 원의 재정적 손실을 입게 되는 극단적인 소모전 양상에 직면합니다. 이러한 비용 비대칭성 속에서, 최근 중동 지역에서 발생한 대규모 공습 사례처럼, 현대전은 저비용 드론과 고성능 미사일을 혼용하여 방공망을 교란하는 공중 위협이 주된 양상으로 자리 잡았습니다. 특히 수백 개의 드론과 미사일이 동시에 쇄도하는 상황에서 인간 관제병의 판단만으로는 한계가 있으며, 아군기와 적기를 순식간에 오판하여 발생할 수 있는 오발사 위험이 비약적으로 증가하고 있습니다. 단 한 번의 오인 사격은 수십억 원에 달하는 요격 미사일의 낭비를 넘어, 방어막 공백으로 인한 핵심 방공 기지 및 군사 인프라 파괴로 이어져 수천억 원 단위의 천문학적인 2차 피해를 초래합니다. 이에 따라 딥러닝 기반의 CV 기술을 활용하여 공중 객체의 정체를 정밀하게 식별하고, 요격 여부에 대한 ‘시각적 추론’을 제공하는 고신뢰성 SW 엔진이 절대적으로 필요하다고 판단했습니다.
+
+**2) goal**
+
+본 프로젝트의 최종 목표는 PyTorch 기반의 딥러닝 모델을 활용하여 공중 객체 (미사일, 전투기, 드론)을 탐지하고 요격 의사결정을 지원하는 ‘Reasoning Guard : 오발사 방지형 실시간 공중 객체 식별 시스템’을 객체 지향 원칙(OOP)에 입각하여 설계 및 구현하는 것입니다.
+> 형상 보존형 전처리 파이프라인
+
+
+Zero-Padding 기법을 도입하여, 고속 비행 객체 고유의 종횡비를 엄격히 보존합니다. 이는 리사이징 과정에서의 형상 왜곡을 방지하여 모델의 특징 추출 성능과 식별 정확도를 극대화하는 핵심 파이프라인이 됩니다.
+
+> UI 통합형 고신뢰성 의사결정 로직
+
+
+학습된 모델을 바탕으로 요격 대상(전투기, 미사일, 드론)에 포함된다면 Shoot(사격)을, 이외의 객체들이면 Hold(대기)라는 판정 결과를 직관적인 UI를 통해 즉각 제공하는 의사결정 알고리즘을 구축합니다.
+
+> 객체 지향적 모듈화 설계
+
+
+시스템의 유지 보수성과 확장성을 위해 모델 추론, 영상 전처리, UI 제어, 이벤트 로그 관리 등 각 기능을 철저히 모듈화합니다. 
+
+> 대리 객체를 통한 데이터 제약 극복
+
+
+국방 데이터의 보안성 및 가용성을 고려하여, 실제 미사일과 기하학적 형태가 유사한 로켓 데이터셋을 대리 객체로 활용합니다. 이를 통해 데이터 획득의 한계를 극복할 예정입니다.
+
+**3) Target Market**
+* 대한민국 국방부 및 방위산업체
+* 방공 부대 및 전략 거점
+* 미래형 무인 요격 체제
 
 ---
 
 ## 2. System Context Diagram Labels
-* **Fighter Jet / Drone / Rocket (Proxy) Dataset**: 전투기 / 드론 / 로켓(대리) 데이터셋
-* **Zero-Padding (Shape Preservation)**: 제로 패딩 (형상 보존)
-* **Data Augmentation (Flight Simulation)**: 데이터 증강 (비행 환경 모사)
-* **Normalization & Tensor Conversion**: 정규화 및 텐서 변환
-* **PyTorch Inference Engine**: 파이토치 추론 엔진
-* **Model Learning (Weight Training)**: 모델 학습 (가중치 훈련)
-* **System (Reasoning Guard)**: 시스템 (Reasoning Guard)
-* **Input (Unknown Object Image)**: 입력 (미식별 객체 이미지)
-* **Output (Shoot or Hold Decision)**: 출력 (사격 또는 대기 결정)
-* **User (Operator)**: 사용자 (관제병)
+
+
+![Reasoning Guard Logo](./assets/그림1.png)
+[그림 2] System context diagram
+
+
+* Fighter Jet / Drone / Rocket (Proxy) Dataset : 전투기 / 드론 / 로켓(대리) 데이터셋
+* Zero-Padding (Shape Preservation) : 제로 패딩 (형상 보존)
+* Data Augmentation (Flight Simulation) : 데이터 증강 (비행 환경 모사)
+* Normalization & Tensor Conversion : 정규화 및 텐서 변환
+* PyTorch Inference Engine : 파이토치 추론 엔진
+* Model Learning (Weight Training) : 모델 학습 (가중치 훈련)
+* System (Reasoning Guard) : 시스템 (Reasoning Guard)
+* Input (Unknown Object Image) : 입력 (미식별 객체 이미지)
+* Output (Shoot or Hold Decision) : 출력 (사격 또는 대기 결정)
+* User (Operator) : 사용자 (관제병)
 
 ---
 

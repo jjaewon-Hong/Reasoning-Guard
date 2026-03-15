@@ -1,7 +1,11 @@
 # Reasoning Guard
-* 딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
-* ![Reasoning Guard Logo](./images/RG.jpg)
-* 22212026 홍재원 hongjaewon0428@gmail.com
+딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
+
+
+![Reasoning Guard Logo](./Logo.png)
+
+
+22212026 홍재원 hongjaewon0428@gmail.com
 
 ## Revision history
 | Revision date | Vesrsion # | Description | Author |

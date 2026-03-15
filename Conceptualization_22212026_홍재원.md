@@ -1,4 +1,14 @@
-# Reasoning Guard: 딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
+# Reasoning Guard
+* 딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
+* ![Reasoning Guard Logo](./images/RG.jpg)
+* 22212026 홍재원 hongjaewon0428@gmail.com
+
+## Revision history
+| Revision date | Vesrsion # | Description | Author |
+| :--- | :--- | :--- | :--- |
+| 03/13/2026 | 0.00 | First Concept document | 홍재원 |
+
+---
 
 ## 1. Business Purpose
 (oss설계.hwp에 작성하신 Project Background 내용을 그대로 옮겨 넣으시면 됩니다.)

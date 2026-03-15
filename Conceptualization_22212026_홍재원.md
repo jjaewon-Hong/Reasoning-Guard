@@ -91,8 +91,7 @@
 
 ## 7. References
 * **연합뉴스 기사**: https://www.yna.co.kr/view/AKR20260303027500009
-* **NVIDIA Research (arXiv)**: https://arxiv.org/abs/2402.06644
-* **Safety Through Reasoning 논문 (arXiv)**: https://arxiv.org/abs/2505.20087
+* **NVIDIA Research (arXiv)**: https://arxiv.org/abs/2505.20087
 * **Fighter Jet Dataset**: https://www.kaggle.com/datasets/khlaifiabilel/military-aircraft-recognition-dataset
 * **Drone Dataset**: https://www.kaggle.com/datasets/simuletic/military-drone-swarm-and-saturation-attack-dataset
 * **Rocket (Proxy) Dataset**: https://www.kaggle.com/datasets/sudipchakrabarty/kiit-mita

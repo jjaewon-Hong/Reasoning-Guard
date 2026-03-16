@@ -1,6 +1,10 @@
 # Reasoning Guard 
 딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
 
+
+![Reasoning Guard Logo](./assets/Logo.png)
+
+
 * **Author:** 22212026 홍재원
 * **Course:** OSS설계 
 

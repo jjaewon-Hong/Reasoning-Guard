@@ -10,7 +10,7 @@
 ## Revision history
 | Revision date | Vesrsion # | Description | Author |
 | :--- | :--- | :--- | :--- |
-| 03/13/2026 | 0.00 | First Concept document | 홍재원 |
+| 03/26/2026 | 1.00 | First Concept document | 홍재원 |
 
 ## Contents
 1. Business purpose 

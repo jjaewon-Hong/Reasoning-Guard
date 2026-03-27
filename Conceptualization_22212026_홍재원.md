@@ -11,7 +11,7 @@
 | Revision date | Vesrsion # | Description | Author |
 | :---: | :---: | :---: | :---: |
 | 03/17/2026 | 1.01 | 데이터셋 구축 | 홍재원 |
-| 03/26/2026 | 1.00 | Zero-Padding 및 fail-safe 설계 | 홍재원 |
+| 03/24/2026 | 1.00 | Zero-Padding 및 fail-Safe 설계 | 홍재원 |
 
 ## Contents
 1. Business purpose 

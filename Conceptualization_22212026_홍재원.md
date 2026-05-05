@@ -51,7 +51,7 @@
 **1) Project background**
 
 
-![그림1](./assets/_1_conceptualization/표1.png)
+![그림1](./assets/_1_conceptualization/표.png)
 
 
 [그림 1] 연합뉴스, 2026.03.03 기준 - 군집 위협 규모에 따른 방어 측 재정적 손해 누적 추이 

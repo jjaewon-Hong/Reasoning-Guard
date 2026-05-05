@@ -2,7 +2,7 @@
 딥러닝 기반 미확인 공중 표적 정밀 판별 시스템
 
 
-![Reasoning Guard Logo](./assets/Logo.png)
+![Reasoning Guard Logo](./assets/conceptualization/Logo.png)
 
 
 22212026 홍재원 hongjaewon0428@gmail.com
@@ -51,7 +51,7 @@
 **1) Project background**
 
 
-![그림1](./assets/그림1.png)
+![그림1](./assets/conceptualization/그림1.png)
 
 
 [그림 1] 연합뉴스, 2026.03.03 기준 - 군집 위협 규모에 따른 방어 측 재정적 손해 누적 추이 
@@ -87,7 +87,7 @@
 ## 2. System context diagram
 
 
-![그림2](./assets/그림2.png)
+![그림2](./assets/conceptualization/그림2.png)
 
 
 [그림 2] System context diagram

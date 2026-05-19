@@ -287,6 +287,8 @@
 * 국방 비용 비대칭성 관련 뉴스 [표] : https://www.yna.co.kr/view/AKR20260303027500009
 * 기술적 근거 : 2025.20087v1 (엔비디아 논문) : https://arxiv.org/abs/2505.20087
 * 캐글(Kaggle) 데이터셋 출처 <br>
-  - 전투기 데이터셋 : https://www.kaggle.com/datasets/jrmymimran/fighterjets <br>
+  - 전투기 데이터셋 1 : https://www.kaggle.com/datasets/jrmymimran/fighterjets <br>
+  - 전투기 데이터셋 2 : https://www.kaggle.com/datasets/kadirkrtls/tez-set-v1 <br>
   - 드론 데이터셋 : https://www.kaggle.com/datasets/dasmehdixtr/drone-dataset-uav <br>
-  - 로켓(미사일 대리) 데이터셋 : https://www.kaggle.com/datasets/eneskosar19/rocket-dataset-for-image-detection-labelled <br>
+  - 로켓(미사일 대리) 데이터셋 : https://www.kaggle.com/datasets/gatewayadam/aerospace-images <br>
+  - 오발사 방지용 노이즈 데이터셋 : https://www.kaggle.com/datasets/harshwalia/birds-vs-drone-dataset <br>

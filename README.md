@@ -23,7 +23,7 @@
 ### 3. 디자인 단계
 * [Design_22212026_홍재원.md](./Design_22212026_홍재원.md)
 
-### 4. 구현 단계 
-* [Implementation_22212026_홍재원.md](./Implementation_22212026_홍재원.md)
+### 4. 구현 단계 (Reasoning-Guard-System)
+* Implementation ▶ [Reasoning-Guard-System](https://github.com/jjaewon-Hong/Reasoning-Guard-System)
 
 *본 프로젝트는 보안 제약을 고려하여 실제 미사일 대신 유사한 기하학적 특성을 가진 로켓(Rocket) 데이터셋을 대리 객체(Proxy Object)로 활용하여 학습 파이프라인을 구축합니다.*
